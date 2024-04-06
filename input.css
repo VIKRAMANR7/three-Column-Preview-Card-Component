@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100svh;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@layer components {
+  .button-orange {
+    @apply text-sm bg-very-light-gray text-bright-orange px-7 py-2.5 rounded-full cursor-pointer font-bold hover:bg-bright-orange hover:text-very-light-gray hover:outline hover:outline-2 hover:outline-very-light-gray focus-visible:bg-bright-orange focus-visible:text-very-light-gray focus-visible:outline focus-visible:outline-2 focus-visible:outline-very-light-gray;
+  }
+  .button-cyan {
+    @apply text-sm bg-very-light-gray text-dark-cyan px-7 py-2.5 rounded-full cursor-pointer font-bold hover:bg-dark-cyan hover:text-very-light-gray hover:outline hover:outline-2 hover:outline-very-light-gray focus-visible:bg-dark-cyan focus-visible:text-very-light-gray focus-visible:outline focus-visible:outline-2 focus-visible:outline-very-light-gray;
+  }
+  .button-dark-cyan {
+    @apply text-sm bg-very-light-gray text-very-dark-cyan px-7 py-2.5 rounded-full cursor-pointer font-bold hover:bg-very-dark-cyan hover:text-very-light-gray hover:outline hover:outline-2 hover:outline-very-light-gray focus-visible:bg-very-dark-cyan focus-visible:text-very-light-gray focus-visible:outline focus-visible:outline-2 focus-visible:outline-very-light-gray;
+  }
+}
